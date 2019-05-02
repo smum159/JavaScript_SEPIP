@@ -1,0 +1,30 @@
+{
+  "name": "javascript_sepip",
+  "version": "1.0.0",
+  "description": "JS PIP",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./index.html ./*.html",
+    "build": "parcel build ./index.html ./*.html"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "compass": "^0.1.1",
+    "imports-loader": "^0.8.0",
+    "jquery": "^3.3.1",
+    "jquery-validation": "^1.19.0",
+    "parcel-bundler": "^1.11.0",
+    "popper.js": "^1.14.7",
+    "sass": "^1.17.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smum159/JavaScript_SEPIP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smum159/JavaScript_SEPIP/issues"
+  },
+  "homepage": "https://github.com/smum159/JavaScript_SEPIP#readme"
+}
