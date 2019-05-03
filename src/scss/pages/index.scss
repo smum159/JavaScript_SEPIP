@@ -1,10 +1,45 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: #111;
 }
-  
 
 .content {
     background-color: white;
-    height: 100vh;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 78px;
+}
+
+.tipos {
+    padding-left: 60px;
+}
+
+.hr-temas {
+    widows: 75%;
+    background-color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.sub-title {
+    padding-top: 30px;
+    color: #3498db;
+}
+
+.tema {
+    width: 40px;
+    padding-bottom: 3px;
+    background-color: #2980b9;
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+.code-zone {
+    display:flex;
+    align-items: center
+}
+
+img {
+    margin: 0 auto;
 }
