@@ -10,7 +10,7 @@
 </head>
   <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">JavaScrip PIP</a>
+        <a class="navbar-brand" href="./index.html">JavaScrip PIP</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,32 +36,30 @@
         </div>
       </nav>
     <div class="content container">
-      <h1>Variables y sus tipos</h1>
-      <h4 class="sub-title">TIPOS DE VARIABLES EN JAVASCRIPT</h4>
+      <h1>Variables</h1>
+      <h4 class="sub-title">JAVASCRIPT VARIABLES</h4>
       <hr class="tema">
-      <p>En JavaScript se distinguen los siguientes tipos de variables:</p>
+      <p>javascript has the following types of variables:</p>
       <ul class="tipos">
-        <li><a href="">Texto</a></li>
-        <li><a href="">Numéricas</a></li>
-        <li><a href="">Booleanos</a></li>
-        <li><a href="">Arreglos</a></li>
-        <li><a href="">Objetos</a></li>
+        <li><a href="">Text</a></li>
+        <li><a href="">Numeric</a></li>
+        <li><a href="">Booleans</a></li>
+        <li><a href="">Arrays</a></li>
+        <li><a href="">Objects</a></li>
       </ul>
       <hr class="hr-temas">
       <div class="row">
         <div class="col-md-6 col-lg-6">
-          <h4 class="sub-title">VARIAPLES TIPO TEXTO</h4>
+          <h4 class="sub-title">TEXT TYPE VARIABLES</h4>
           <hr class="tema">
-          <p>
-              Las variables de tipo texto almacenan una cadena de caracteres.<br><br>
-              Pueden ir entre comillas simples o entre comillas dobles.<br><br>
-              El uso de comillas simples o comillas dobles es indistinto. Lo 
-              importante es el orden de como las usamos. Si por necesidades del 
-              programa alguna vez necesitamos usar comillas simples, entonces 
-              usaríamos para la variable de tipo texto comillas simples. Y viceversa. 
-              Lo único que no es permitido es mezclar comillas simples y cerrarlas 
-              con comillas dobles. Y viceversa.
-          </p>
+          <p>Text variables store a string of characters.<br><br>
+              You can use single quotes or double quotes<br><br>
+              The use of single quotes or double quotes is indistinct. 
+              The important thing is the order of how we use them. 
+              If, for the needs of the program, we ever need to use
+              single quotes, then we would use single quotes for the
+              text type variable. And vice versa. The only thing that is not allowed is to mix 
+              Single quotes and close them with double quotes. And vice versa.</p>
         </div>
         <div class="code-zone col-md-6 col-lg-6">
           <img class="img-fluid" src="./src/assets/images/variables-tipos.png" alt="">
@@ -73,30 +71,24 @@
           <img class="img-fluid" src="./src/assets/images/var-num.png" alt="">
         </div>
         <div class="col-md-6 col-lg-6">
-          <h4 class="sub-title">VARIABLES DE TIPO NUMÉRICO</h4>
+          <h4 class="sub-title">NUMERIC TYPE VARIABLES</h4>
           <hr class="tema">
           <p>
-            Las variables numéricas almacenan números.<br><br>
-
-            En javascript no hay distinción entre números enteros o con decimales. 
-            No hay integers ni floats. Todas se consideran una variable de tipo «number«. 
-            No obstante, el tiempo de cálculo y los recursos requeridos por la computadora 
-            aumentas cuando hay decimales de por medio. Además, también hay cuestiones relativas 
-            a los redondeos que hay que tener en cuenta en programación avanzada.<br><br>
-
-            A diferencia de con los strings, las variables numéricas se caracterizan porqué no 
-            van entre comillas de ningún tipo.
+            Numeric type variables store numbers.<br><br>
+            Each number, even integer numbers, decimal numbers... have no diference 
+            so they all are numeric variables for JavaScript. 
+            However, advanced programming requires special attention for handle decimal numbers.<br><br>
+            This type of variables do not require any kind of quotes.
           </p>
         </div>
       </div>
       <hr class="hr-temas">
       <div class="row">
         <div class="col-md-6 col-lg-6">
-          <h4 class="sub-title">VARIABLES TIPO BOOLEANO</h4>
+          <h4 class="sub-title">BOOLEAN TYPE VARIABLES</h4>
           <hr class="tema">
           <p>
-            Las variables booleanas almacenan los valores true o false.<br><br>
-            En su defecto los booleanos pueden valer 1 o 0.
+            Boolean type variables store TRUE or FALSE values.<br><br>
           </p>
         </div>
         <div class="code-zone col-md-6 col-lg-6">
@@ -109,39 +101,36 @@
           <img class="img-fluid" src="./src/assets/images/var-array.png" alt="">
         </div>
         <div class="col-md-6 col-lg-6">
-          <h4 class="sub-title">VARIABLES DE TIPO ARREGLO</h4>
+          <h4 class="sub-title">ARRAY TYPE VARIABLES</h4>
           <hr class="tema">
           <p>
-            Las variables listas son un tipo especial de objeto que almacena un inventario 
-            de contenidos ordenados que pueden ser de cualquier tipo de variable.<br><br>
+            Array type variables are a special type of object that stores an inventory
+            of ordered contents that can be of any type of variable.<br><br>
 
-            Una lista puede almacenar texto, números, booleanas, otras listas y objetos.<br><br>
+            The array can store text, numbers, another arrays and any type of variable.<br><br>
             
-            También se conocen como vectores o arreglos.<br><br>
-            
-            Cuando tenemos una lista de listas entonces podemos tener una matriz de datos.
+            Also known as vectors or lists.<br><br>
           </p>
         </div>
       </div>
       <hr class="hr-temas">
       <div class="row">
         <div class="col-md-6 col-lg-6">
-          <h4 class="sub-title">Objetos</h4>
+          <h4 class="sub-title">Objects</h4>
           <hr class="tema">
           <p>
-            Los objetos son variables que nos ayudan a almacenar diversas propiedades. Pueden 
-            almacenar cualquier tipo de variable: texto, números, listas, booleanos, otros objetos 
-            e incluso funciones.<br><br>
+            An object is a standalone entity, with properties and type. 
+            Compare it with a cup, for example. A cup is an object, with properties. 
+            A cup has a color, a design, weight, a material it is made of, etc. 
+            The same way, JavaScript objects can have properties, 
+            which define their characteristics.<br><br>
 
-            Para acceder al valor almacenado en una propiedad de un objeto devemos escribir 
+            So we can get a specific value we have to follow the next structure: 
             «persona.nombrePropiedad»<br><br>
 
-            Una particularidad muy importante es que los objetos no necesitan tener sus propiedades 
-            ordenadas.<br><br>
+            An important thing about objects, objects do not need and specific order of their attributes.<br><br>
 
-            Cada propiedad se separa por coma «,» a excepción de la última.<br><br>
-
-            En los objetos las propiedades van encerradas dentro de «{ }»<br><br>
+            each attribute has to be separed by a comma «,» for exeption the last one.<br><br>
           </p>
         </div>
         <div class="code-zone col-md-6 col-lg-6">
