@@ -37,9 +37,18 @@ body {
 
 .code-zone {
     display:flex;
-    align-items: center
+    align-items: center;
 }
 
 img {
     margin: 0 auto;
+}
+
+.index-menu {
+    width: 40%;
+    margin: auto
+}
+.index-list{
+    list-style: upper-roman;
+    font-size: larger;
 }
