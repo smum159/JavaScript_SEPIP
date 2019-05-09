@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Sant-Joan-Despi Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sant-Joan-Despi Regular'), url('./SantJoanDespi-Regular.otf') format("opentype");
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./src/scss/app.scss">
+  <title>Use of the variables</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="">JavaScrip PIP</a>
+  </nav>
+  <div class="content container">
+    <h1>Use of the variables</h1>
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <h4 class="sub-title">ARITHMETIC OPERATIONS WITH TEXT-TYPE VARIABLES</h4>
+        <hr class="tema">
+        <p>A sum of text strings results in a concatenation of these.</br></br>
+          When we add numbers enclosed within a string, the result is 
+          a concatenation of the numbers and not an arithmetic sum.</br></br>
+          When we multiply numbers enclosed within strings, javascript 
+          transforms the texts into numbers and correctly processes the multiplication.</br></br>
+          This is precisely a very interesting feature of JS. Variables evolve in real 
+          time from one type to another. Unlike other languages.</p>
+      </div>
+      <div class="ejemplo-text-var col-md-6 col-lg-6">
+          The following Inputs are of text type, if you add numbers they will be concatenated 
+          but if you multiply JavaScript it will convert them to the number to do the operation 
+          correctly, try:</br></br></br>
+        <center>
+          <div class="val-x">
+            <label for="variable-x">Var x:</label>
+            <input id="var-x" name="variable-x" type="text">
+          </div>
+          <div class="val-y">
+            <label for="variable-y">Var y:</label>
+            <input id="var-y" name="variable-y" type="text">
+          </div>
+          <div class="div-buttons">
+            <button onclick="sum()">Sum</button>
+            <button onclick="mul()">Multiply</button></br></br>
+            <button id="show-code">Open code</button>
+          </div>
+          </br>
+          <div id="code" class="code close">
+            <img class="img-fluid" src="./src/assets/images/var-text-operations.png" alt="">
+          </div>
+          Result:
+          <div id="result" class="resultado"></div>
+        </center>
+      </div>
+    </div>
+    <hr class="hr-temas">
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <h4 class="sub-title">ARITHMETIC OPERATIONS WITH VARIABLES OF TYPE NUMBER</h4>
+        <hr class="tema">
+        The basic operations that the numbers admit are:</br></br>
+        <ul>
+          <li>Sum, <b>+</b></li>
+          <li>Subtraction, <b>-</b></li>
+          <li>Division, <b>/</b></li>
+          <li>Multiplication, <b>*</b></li>
+          <li>module operation (the rest of the division), <b>%</b></li>
+        </ul>
+        There are also expressions that are actually abbreviations of other longer expressions.</br></br>
+        <ul>
+          <li>x++ <b>equals</b> x = x + 1;</li>
+          <li>++x <b>equals</b> x = x + 1;</li>
+          <li>x– <b>equals</b> x = x – 1;</li>
+          <li>–x <b>equals</b> x = x – 1;</li>
+        </ul>
+        In either case it is essential to note that the sign of (=) refers to an assignment and not 
+        to an equality. There is no first degree equation. It is the form with which we indicate that 
+        a variable happens to have a new value resulting from operating with the one it had until now.
+      </div>
+      <div class="ejemplo-text-var col-md-6 col-lg-6">
+          The following Inputs are of text type, if you add numbers they will be concatenated 
+          but if you multiply JavaScript it will convert them to the number to do the operation 
+          correctly, try:</br></br></br>
+        <center>
+          <div class="val-x">
+            <label for="variable-x">Var x:</label>
+            <input id="var-x-num" name="variable-x" type="number">
+          </div>
+          <div class="val-y">
+            <label for="variable-y">Var y:</label>
+            <input id="var-y-num" name="variable-y" type="number">
+          </div>
+          <div class="div-buttons">
+            <button onclick="sumNum()">+</button>
+            <button onclick="SubtNum()">-</button>
+            <button onclick="DivNum()">/</button></br></br>
+            <button onclick="MulNum()">*</button></br></br>
+            <button id="show-code-num">Open code</button>
+          </div>
+          </br>
+          <div id="code-num" class="code close">
+            <img class="img-fluid" src="./src/assets/images/var-num-operations.png" alt="">
+          </div>
+          Result:
+          <div id="result-num" class="resultado"></div>
+        </center>
+      </div>
+    </div>
+    <hr class="hr-temas">
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <h4 class="sub-title">OPERATIONS WITH BOOLEAN TYPE VARIABLES</h4>
+        <hr class="tema">
+        The basic operations that Booleans admit are:</br></br>
+        <ul>
+          <li>Equality in content, ==</li>
+          <li>Equality in type of variable and content, ===</li>
+          <li>Negation, !</li>
+          <li>«Not the same as«, !=</li>
+          <li>And, &&</li>
+          <li>Or, ||</li>
+          <li>&gt;= , greater than or equal; &lt;, less than</li>
+          <li>&lt;= , less than or equal; &gt;, greater than</li>
+        </ul>
+      </div>
+      <div class="code-zone col-md-6 col-lg-6">
+        <img class="img-fluid" src="./src/assets/images/car-bol-operations.png" alt="">
+      </div>
+    </div>
+  </div>
+  <script>
+    function sum() {
+      var x = document.getElementById('var-x');
+      var y = document.getElementById('var-y');
+      var result = document.getElementById('result');
+      var sum = x.value + y.value;
+      result.innerHTML = sum;
+    }
+
+    function mul() {
+      var x = document.getElementById('var-x');
+      var y = document.getElementById('var-y');
+      var result = document.getElementById('result');
+      var sum = x.value * y.value;
+      result.innerHTML = sum;
+    }
+
+    function sumNum() {
+      var x = document.getElementById('var-x-num');
+      var y = document.getElementById('var-y-num');
+      var sum = Number(x.value) + Number(y.value);
+      var result = document.getElementById('result-num');
+      result.innerHTML = sum;
+    }
+
+    function SubtNum() {
+      var x = document.getElementById('var-x-num');
+      var y = document.getElementById('var-y-num');
+      var sum = Number(x.value) - Number(y.value);
+      var result = document.getElementById('result-num');
+      result.innerHTML = sum;
+    }
+
+    function DivNum() {
+      var x = document.getElementById('var-x-num');
+      var y = document.getElementById('var-y-num');
+      var sum = Number(x.value) / Number(y.value);
+      var result = document.getElementById('result-num');
+      result.innerHTML = sum;
+    }
+
+    function MulNum() {
+      var x = document.getElementById('var-x-num');
+      var y = document.getElementById('var-y-num');
+      var sum = Number(x.value) * Number(y.value);
+      var result = document.getElementById('result-num');
+      result.innerHTML = sum;
+    }
+    
+    var x, y;
+    x = true;
+    y = false;
+
+    // "AND"
+    console.log(x && y); // returns false
+    console.log(y && x); // returns false
+    console.log(x && x); // returns treu
+    console.log(y && y); //  returnsfalse
+
+    // "OR"
+    console.log(x || y); // returns treu
+    console.log(y || x); // returns treu
+    console.log(x || x); // returns treu
+    console.log(y || y); // returns false
+
+    // Equality and denial
+    console.log(x == y); // returns false
+    console.log(x != y); // returns treu
+
+  </script>
+  <script src="./src/js/show-code.js"></script>
+</body>
+</html>

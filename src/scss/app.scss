@@ -2,7 +2,9 @@
 @import '~bootstrap/scss/bootstrap';
 
 @import
+
     //fonts
+    "../assets/fonts/_tipography.css",
 
     //base
 
@@ -11,4 +13,5 @@
     // Components
 
     // Pages
-    "pages/index.scss";
+    "pages/index.scss",
+    "pages/variables.scss";
