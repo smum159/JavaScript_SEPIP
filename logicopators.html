@@ -14,7 +14,109 @@
     </nav>
     <div class="content container">
       <h1>Logic Operators</h1>
-      <h4 class="sub-title">sutitle</h4>
       <hr class="tema">
+      <p>There are three logical operators in JavaScrip:</p>
+      <ul>
+        <li><a href="#or">|| (OR)</a></li>
+        <li><a href="#and">&& (AND)</a></li>
+        <li><a href="#not">! (NOT)</a></li>
+      </ul>
+      <p>
+        Although they are called "logical", they can be applied to values of any type, not only boolean
+        Their result can also be of any type.</br>
+      </p>
+      <hr class="hr-temas">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <h4 id="or" class="sub-title"><b>|| (OR)</b></h4>
+          <hr class="tema">
+          <p>The "OR" operator is represented with two vertical line symbols:</p>
+          <pre><code class="code-one">result = b || a;</code></pre>
+          <p>In classical programming, the logical OR is meant to manipulate 
+            boolean values only. If any of its arguments are <code class="code-two">true</code>, it returns 
+            <code class="code-two">true</code>, otherwise it returns <code class="code-two">false</code>.
+          </p>
+          <p>
+            In JavaScript, the operator is a little bit trickier and more powerful. But first, 
+            let’s see what happens with boolean values.
+          </p>
+          <p>
+            There are four possible logical combinations:
+          </p>
+          <pre>
+            <span>alert(<code class="code-one"> true </code><code class="code-or">|| </code><code class="code-one">true </code>);  // true</span>
+            <span>alert(<code class="code-one"> false </code><code class="code-or">|| </code><code class="code-one">true </code>);  // false</span>
+            <span>alert(<code class="code-one"> true </code><code class="code-or">|| </code><code class="code-one">false </code>);  // false</span>
+            <span>alert(<code class="code-one"> false </code><code class="code-or">|| </code><code class="code-one">false </code>);  // true</span>
+          </pre>
+          <p>As we can see, the result is always true except for the case when both operands are false.</p>
+          <p>If an operand is not a boolean, it’s converted to a boolean for the evaluation.</p>
+          <p>For instance, the number <code class="code-two">1</code> is treated as <code class="code-two">true</code>, the number <code class="code-two">0</code> as <code class="code-two">false</code>:</p>
+          <pre>
+            <code class="code-if">if</code> ( <code class="code-one">1</code> <code class="code-or">||</code> <code class="code-one">0</code> ) { // works just like if( true || false )
+              alert( <code class="code-text">'truthy!'</code> );
+            }
+          </pre>
+          <hr class="hr-temas">
+          <h4 id="and" class="sub-title"><b>&& (AND)</b></h4>
+          <hr class="tema">
+          <p>The AND operator is represented with two ampersands <code class="code-two">&&</code>:</p>
+          <pre>result = a <code class="code-or">&&</code> b;</pre>
+          <p>In classical programming, AND returns <code class="code-two">true</code> if both operands are truthy and <code class="code-two">false</code> otherwise:</p>
+          <pre>
+            <span>alert(<code class="code-one"> true </code><code class="code-or">&& </code><code class="code-one">true </code>);  // true</span>
+            <span>alert(<code class="code-one"> false </code><code class="code-or">&& </code><code class="code-one">true </code>);  // false</span>
+            <span>alert(<code class="code-one"> true </code><code class="code-or">&& </code><code class="code-one">false </code>);  // false</span>
+            <span>alert(<code class="code-one"> false </code><code class="code-or">&& </code><code class="code-one">false </code>);  // false</span>
+          </pre>
+          <p>An example with <code class="code-two">if</code>:</p>
+          <pre>
+            <code class="code-if">let</code> hour = <code class="code-one">12</code>;
+            <code class="code-if">let</code> minute = <code class="code-one">30</code>;
+            
+            <code class="code-if">if</code> (hour == <code class="code-one">12</code> <code class="code-or">&&</code> minute == <code class="code-one">30</code>) {
+              alert( <code class="code-text">'The time is 12:30'</code> );
+            }
+          </pre>
+          <p>Just as with OR, any value is allowed as an operand of AND:</p>
+          <pre>
+            <code class="code-if">if</code> (<code class="code-one">1</code> <code class="code-or">&&</code> <code class="code-one">0</code>) { // evaluated as true && false
+              alert( <code class="code-text">"won't work, because the result is falsy"</code> );
+            }
+          </pre>
+          <hr class="hr-temas">
+          <h4 id="and" class="sub-title"><b>! (NOT)</b></h4>
+          <hr class="tema">
+          <p>The boolean NOT operator is represented with an exclamation sign <code class="code-two">!</code>.</p>
+          <p>The syntax is pretty simple:</p>
+          <pre>result = <code class="code-or">!</code>value;</pre>
+          <p>The operator accepts a single argument and does the following:</p>
+          <ol>
+            <li>Converts the operand to boolean type: <code class="code-two">true/false</code>.</li>
+            <li>Returns the inverse value.</li>
+          </ol>
+          <p>For instance:</p>
+          <pre>
+            alert( <code class="code-or">!</code><code class="code-one">true</code> ); // false
+            alert( <code class="code-or">!</code><code class="code-one">0</code> ); // true
+          </pre>
+          <p>A double NOT <code class="code-two">!!</code> is sometimes used for converting a value to boolean type:</p>
+          <pre>
+            alert( <code class="code-or">!!</code><code class="code-text">"non-empty string"</code> ); // true
+            alert( <code class="code-or">!!</code><code class="code-if">null</code> ); // false
+          </pre>
+          <p>
+            That is, the first NOT converts the value to boolean and returns the inverse, and the second NOT inverses 
+            it again. In the end, we have a plain value-to-boolean conversion.
+          </p>
+          <p>There’s a little more verbose way to do the same thing – a built-in <code class="code-two">Boolean</code> function:</p>
+          <pre>
+            alert( Boolean(<code class="code-text">"non-empty string"</code>) ); // true
+            alert( Boolean(<code class="code-if">null</code>) ); // false
+          </pre>
+          <p>The precedence of NOT <code class="code-two">!</code> is the highest of all logical operators, so it always executes first, before <code class="code-two">&&</code> or <code class="code-two">||</code>.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
