@@ -14,7 +14,52 @@
     </nav>
     <div class="content container">
       <h1>Null & Undefined</h1>
-      <h4 class="sub-title">sutitle</h4>
+      <h4 class="sub-title">What is null?</h4>
       <hr class="tema">
+      <p>There are two features of <code class="code-two">null</code>:</p>
+      <ul>
+        <li><code>null</code> is an empty or non-existent value.</li>
+        <li><code>null</code> must be assigned.</li>
+      </ul>
+      <p>Here’s an example. We assign the value of <code>null</code> to <code class="code-if">a</code>:</p>
+      <div class="code">
+        <p><code class="code-if">let</code> <code class="code-var">a</code> = <code class="code-if">null</code>;</p>
+        <p class="sin-padding"><code class="code-con">console</code>.<code class="code-am">log</code>(<code class="code-var">a</code>);</p>
+        <p class="sin-padding"><code class="code-com">// null</code></p>
+      </div>
+      <hr class="hr-temas">
+      <h4 class="sub-title">What is undefined?</h4>
+      <hr class="tema">
+      <p>Undefined most typically means a variable has been declared, but not defined. For example:</p>
+      <div class="code">
+        <p><code class="code-if">let</code> <code class="code-var">b</code>;</p>
+        <p class="sin-padding"><code class="code-con">console</code>.<code class="code-am">log</code>(<code class="code-var">b</code>);</p>
+        <p class="sin-padding"><code class="code-com">// undefined</code></p>
+      </div>
+      <p>You can also explicitly set a variable to equal undefined:</p>
+      <div class="code">
+        <p><code class="code-if">let</code> <code class="code-var">c</code> = <code class="code-if">undefined</code>;</p>
+        <p class="sin-padding"><code class="code-con">console</code>.<code class="code-am">log</code>(<code class="code-var">c</code>);</p>
+        <p class="sin-padding"><code class="code-com">// undefined</code></p>
+      </div>
+      <p>Also when looking up non-existent properties in an object, you will receive undefined:</p>
+      <div class="code">
+        <p><code class="code-if">var</code> <code class="code-var">d</code> = {};</p>
+        <p class="sin-padding"><code class="code-con">console</code>.<code class="code-am">log</code>(<code class="code-var">d</code>.<code class="code-var">fake</code>);</p>
+        <p class="sin-padding"><code class="code-com">// undefined</code></p>
+      </div>
+      <hr class="hr-temas">
+      <h4 class="sub-title">Similarities between null and undefined</h4>
+      <hr class="tema">
+      <p>In JavaScript there are only six falsy values. Both <code class="code-two">null</code> and <code class="code-two">undefined</code> are two of the six falsy values. Here’s a full list:</p>
+      <ul>
+        <li>false</li>
+        <li>0 (zero)</li>
+        <li>“” (empty string)</li>
+        <li><b>null</b></li>
+        <li><b>undefined</b></li>
+        <li>NaN (Not A Number)</li>
+      </ul>
+    </div>
   </body>
 </html>
