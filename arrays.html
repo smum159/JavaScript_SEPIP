@@ -23,13 +23,13 @@
         <li><a href="#structure">Structure</a></li>
         <li><a href="#access">Access elements</a></li>
         <li><a href="#popshift">Pop/shift</a></li>
-        <li><a href="">Pushing</a></li>
-        <li><a href="">Chaging</a></li>
-        <li><a href="">Delete</a></li>
-        <li><a href="">Splice</a></li>
-        <li><a href="">Slice</a></li>
-        <li><a href="">Concat (merge)</a></li>
-        <li><a href="">Sort</a></li>
+        <li><a href="#push">Pushing</a></li>
+        <li><a href="#changing">Chaging</a></li>
+        <li><a href="#delete">Delete</a></li>
+        <li><a href="#splice">Splice</a></li>
+        <li><a href="#slice">Slice</a></li>
+        <li><a href="#concat">Concat (merge)</a></li>
+        <li><a href="#sort">Sort</a></li>
       </ul>
       <hr class="hr-temas">
       <div class="row">
@@ -77,13 +77,25 @@
           <img class="img-fluid" src="./src/assets/images/popshift.png" alt="">
         </div>
       </div>
+      <hr class="hr-temas">
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <h4 id="push" class="sub-title">PUSH</h4>
+          <hr class="tema">
+          <p>
+              Just as POP work the arrays as piles PUSH do the same thing, but this time it will add a new element to the last position of the array.<br><br>
+          </p>
+        </div>
+        <div class="code-zone col-md-6 col-lg-6">
+          <img class="img-fluid" src="./src/assets/images/push.png" alt="">
+        </div>
+      </div>
     </div>
   </body>
   <script type="text/javascript">
 
-    var array = ["John", "Male", "22", "Sawyer"];
+    var array = ["Jhon", "Male", "22", "Sawyer"];
 
-    
     // this will print the whole array in the console
     console.log("first array:",array);
     
@@ -106,7 +118,7 @@
     console.log("pop array:", array);
     //Output
     //pop array: (3) ["John", "Male", "22"]
-
+    
     //At this point the array will lose "John"
     //And the variable shiftElement will take it_
     var shiftElement = array.shift();
@@ -116,5 +128,9 @@
     //shift array: (2) ["Male", "22"]
     //shiftElement: "John"
     
+    array.push("Developer");
+    console.log("pop array:",array);
+    //Output
+    ////first array: (3) ["Male", "22", "Developer"]
   </script>
 </html>
