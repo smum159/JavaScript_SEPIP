@@ -14,7 +14,85 @@
     </nav>
     <div class="content container">
       <h1>Flow Control</h1>
-      <h4 class="sub-title">sutitle</h4>
       <hr class="tema">
+      <p>
+        The control structures within JavaScript allow the program flow to 
+        change within a unit of code or function. These statements can determine 
+        whether or not given statements are executed, as well as repeated execution 
+        of a block of code.
+      </p>
+      <p>
+        Most of the statements enlisted below are so-called conditional statements 
+        that can operate either on a statement or a block of code enclosed with braces 
+        ({ and }). The same structures utilize Booleans to determine whether or not a 
+        block gets executed, where any defined variable that is neither zero nor an empty 
+        string is treated as true.
+      </p>
+      <h4 class="sub-title">Conditional statements</h4>
+      <hr class="tema">
+      <h5>if statement</h5>
+      <hr class="tema-sub">
+      <p>The if statement is straightforward — if the given expression is true, the statement or statements will be executed. Otherwise, they are skipped.</p>
+      <div class="code">
+          <code class="code-if"><b>if</b></code> (<code class="code-var">a</code> === <code class="code-var">b</code>) {<br>
+          &nbsp;&nbsp;&nbsp;<code class="code-con">document</code>.<code class="code-var">body</code>.<code class="code-var">innerHTML</code> += <code class="code-or">"a equals b"</code>;<br>  
+          }
+      </div>
+      <p>The if statement may also consist of multiple parts, incorporating else and else if sections. These keywords are part of the if statement, and identify the code blocks that are executed, if the preceding condition is false.</p>
+      <div class="code">
+        <code class="code-if"><b>if</b></code> (<code class="code-var">a</code> === <code class="code-var">b</code>) {<br>
+        &nbsp;&nbsp;&nbsp;<code class="code-con">document</code>.<code class="code-var">body</code>.<code class="code-var">innerHTML</code> += <code class="code-or">"a equals b"</code>;<br> 
+        } <code class="code-if"><b>else if</b></code> (<code class="code-var">a</code> === <code class="code-var">c</code>) {<br>
+        &nbsp;&nbsp;&nbsp;<code class="code-con">document</code>.<code class="code-var">body</code>.<code class="code-var">innerHTML</code> += <code class="code-or">"a equals c"</code>;<br>
+        } <code class="code-if">else</code> {<br>
+        &nbsp;&nbsp;&nbsp;<code class="code-con">document</code>.<code class="code-var">body</code>.<code class="code-var">innerHTML</code> += <code class="code-or">"a does not equal either b or c"</code>;<br>
+        }
+      </div>
+      <h5>while statement</h5>
+      <hr class="tema-sub">
+      <p>The while statement executes a given statement as long as a given expression is true. For example, the code block below will increase the variable c to 10:</p>
+      <div class="code">
+        <code class="code-if"><b>while</b></code> (<code class="code-var">c</code> &lt; <code>10</code>) {<br>
+        &nbsp;&nbsp;&nbsp;<code class="code-var">c</code> += <code>1</code>;<br>
+        &nbsp;&nbsp;&nbsp;<code class="code-com">// …</code><br>
+        }
+      </div>
+      <p>This control loop also recognizes the <code class="code-two">break</code> and continue keywords. The <code class="code-two">break</code> keyword causes the immediate termination of the loop, allowing for the loop to terminate from anywhere within the block.</p>
+      <p>The <code class="code-two">continue</code> keyword finishes the current iteration of the <code class="code-two">while</code> block or statement, and checks the condition to see, if it is true. If it is true, the loop commences again.</p>
+      <h5>do … while statement</h5>
+      <hr class="tema-sub">
+      <p>The <code class="code-two">do</code> … <code class="code-two">while</code> statement executes a given statement as long as a given expression is true - however, unlike the while statement, this control structure will always execute the statement or block at least once. For example, the code block below will increase the variable c to 10:</p>
+      <div class="code">
+        <code class="code-if"><b>do</b></code> {<br>
+        &nbsp;&nbsp;&nbsp;<code class="code-var">c</code> += <code>1</code>;<br>
+        } <code class="code-if"><b>while</b></code> (<code class="code-var">c</code> &lt; <code>10</code>);
+      </div>
+      <h5>for statement</h5>
+      <hr class="tema-sub">
+      <p>The for statement allows greater control over the condition of iteration. While it has a conditional statement, it also allows a pre-loop statement, and post-loop increment without affecting the condition. The initial expression is executed once, and the conditional is always checked at the beginning of each loop. At the end of the loop, the increment statement executes before the condition is checked once again.</p>
+      <p>The for statement is usually used for integer counters:</p>
+      <div class="code">
+        <code class="code-if">var</code> <code class="code-var">i</code>;<br>
+        <code class="code-if"><b>for</b></code> (<code class="code-var">i</code> = <code>0</code>; <code class="code-var">i</code> &lt; <code>10</code>; <code class="code-var">i</code> += <code>1</code>) {<br>
+        &nbsp;&nbsp;&nbsp;<code class="code-com">// …</code><br>
+        }
+      </div>
+      <h5>switch statement</h5>
+      <hr class="tema-sub">
+      <p>The switch statement evaluates an expression, and determines flow control based on the result of the expression:</p>
+      <div class="code">
+        <code class="code-if"><b>switch</b></code>(<code class="code-var">i</code>) {<br>
+          <code class="code-if">case</code> <code>1</code>:<br>
+          &nbsp;&nbsp;&nbsp;<code class="code-com">// …</code><br>
+          &nbsp;&nbsp;&nbsp;<code class="code-if">break</code>;<br>
+          <code class="code-if">case</code> <code>2</code>:<br>
+          &nbsp;&nbsp;&nbsp;<code class="code-com">// …</code><br>
+          &nbsp;&nbsp;&nbsp;<code class="code-if">break</code>;<br>
+          <code class="code-if">default</code>:<br>
+          &nbsp;&nbsp;&nbsp;<code class="code-com">// …</code><br>
+          &nbsp;&nbsp;&nbsp;<code class="code-if">break</code>;<br>
+        }
+      </div>
+    </div>
   </body>
 </html>

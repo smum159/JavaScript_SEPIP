@@ -3,6 +3,8 @@ require('jquery-validation');
 
 import $ from 'jquery';
 
-let a = null;   
+var i;
 
-a + a;
+switch(i) {
+
+}
