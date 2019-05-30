@@ -18,11 +18,11 @@
       <hr class="tema">
       <p>
         As we already know an array is a variable tuype that stores ordered data as a pile.
-        The array can store text, numbers, another arrays and any type of variable.<br><br></p>
+        The array can store text, numbers, another arrays and any type of variable. (To see the ouput of the examples open the console).<br><br></p>
       <ul class="tipos">
-        <li><a href="">Structure</a></li>
-        <li><a href="">Access elements</a></li>
-        <li><a href="">Pop/shift</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#access">Access elements</a></li>
+        <li><a href="#popshift">Pop/shift</a></li>
         <li><a href="">Pushing</a></li>
         <li><a href="">Chaging</a></li>
         <li><a href="">Delete</a></li>
@@ -34,28 +34,87 @@
       <hr class="hr-temas">
       <div class="row">
         <div class="col-md-6 col-lg-6">
-          <h4 class="sub-title">ARRAY STRUCTURE</h4>
+          <h4 id="structure" class="sub-title">ARRAY STRUCTURE</h4>
           <hr class="tema">
           <p>
             An array as any variable is declared with var or let, the difference to 
             any other variable is that the data stored in an array is between brackets “[ ]” 
-            and inside of these separated with commas a different the data what meant to be stored.<br><br></p>
+            and inside of these separated with commas a different the data what meant to be stored.<br><br>
+          </p>
         </div>
         <div class="code-zone col-md-6 col-lg-6">
           <img class="img-fluid" src="./src/assets/images/simplearray.png" alt="">
         </div>
       </div>
+      <hr class="hr-temas">
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <h4 id="access" class="sub-title">ACCESSING TO ELEMENTS</h4>
+          <hr class="tema">
+          <p>
+              To access to certain elements of an array it only matters to know the position where
+              the element is, in the arrays the position of the elements start with 0 being the first position and so on.
+              These elements can also be stored within variables for the use that they are required to give.<br><br>
+          </p>
+        </div>
+        <div class="code-zone col-md-6 col-lg-6">
+          <img class="img-fluid" src="./src/assets/images/accesarrayelements.png" alt="">
+        </div>
+      </div>
+      <hr class="hr-temas">
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <h4 id="popshift" class="sub-title">POP & SHIFT</h4>
+          <hr class="tema">
+          <p>
+              When it comes to removing elements of an array one by one there are two methods, POP and SHIFT the difference between 
+              these two is that POP work with the arrays as a pile, removing the last element in the array, or in this example. 
+              By the other side, SHIFT removes the first element in the array.<br>If the method is used with a variable this one will
+              take the element removed as a value.<br><br>
+          </p>
+        </div>
+        <div class="code-zone col-md-6 col-lg-6">
+          <img class="img-fluid" src="./src/assets/images/popshift.png" alt="">
+        </div>
+      </div>
     </div>
-    <script type="text/javascript">
-
-      var array = ["John", "Male", "22", "Sawyer"];
-
-      // this will print the whole array in the console
-      console.log(array);
-
-      //Output
-      //(4) ["John", "Male", "22", "Sawyer"]
-
-    </script>
   </body>
+  <script type="text/javascript">
+
+    var array = ["John", "Male", "22", "Sawyer"];
+
+    
+    // this will print the whole array in the console
+    console.log("first array:",array);
+    
+    //Output
+    //first array: (4) ["John", "Male", "22", "Sawyer"]
+    
+    //This variable will contain the first element of the previous array
+    var firstPositon = array[0];
+    
+    //This will print the variable and the third element of the array
+    console.log("First element:", firstPositon);
+    console.log("Third element:", array[2]);
+    
+    //Output
+    //First element: John
+    //Third element: 22
+    
+    //At this point the array will lose "Sawyer"
+    array.pop();
+    console.log("pop array:", array);
+    //Output
+    //pop array: (3) ["John", "Male", "22"]
+
+    //At this point the array will lose "John"
+    //And the variable shiftElement will take it_
+    var shiftElement = array.shift();
+    console.log("shift array:", array);
+    console.log("shiftElement:", shiftElement);
+    //Output
+    //shift array: (2) ["Male", "22"]
+    //shiftElement: "John"
+    
+  </script>
 </html>
