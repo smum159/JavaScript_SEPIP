@@ -24,7 +24,7 @@
         <li><a href="#access">Access elements</a></li>
         <li><a href="#popshift">Pop/shift</a></li>
         <li><a href="#push">Pushing</a></li>
-        <li><a href="#changing">Chaging</a></li>
+        <li><a href="#changing">Changing</a></li>
         <li><a href="#delete">Delete</a></li>
         <li><a href="#splice">Splice</a></li>
         <li><a href="#slice">Slice</a></li>
@@ -48,17 +48,21 @@
       </div>
       <hr class="hr-temas">
       <div class="row">
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-12 col-lg-12">
           <h4 id="access" class="sub-title">ACCESSING TO ELEMENTS</h4>
           <hr class="tema">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          
+          <img class="img-fluid" src="./src/assets/images/accesarrayelements.png" alt="">
+          
+        </div>
+        <div class="code-zone col-md-6 col-lg-6">
           <p>
               To access to certain elements of an array it only matters to know the position where
               the element is, in the arrays the position of the elements start with 0 being the first position and so on.
               These elements can also be stored within variables for the use that they are required to give.<br><br>
           </p>
-        </div>
-        <div class="code-zone col-md-6 col-lg-6">
-          <img class="img-fluid" src="./src/assets/images/accesarrayelements.png" alt="">
         </div>
       </div>
       <hr class="hr-temas">
@@ -79,19 +83,118 @@
       </div>
       <hr class="hr-temas">
       <div class="row">
-        <div class="col-md-6 col-lg-6">
-          <h4 id="push" class="sub-title">PUSH</h4>
+        <div class="col-md-12 col-lg-12">
+          <h4 id="access" class="sub-title">PUSH</h4>
           <hr class="tema">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <img class="img-fluid" src="./src/assets/images/push.png" alt="">
+        </div>
+        <div class="code-zone col-md-6 col-lg-6">
           <p>
               Just as POP work the arrays as piles PUSH do the same thing, but this time it will add a new element to the last position of the array.<br><br>
           </p>
         </div>
+      </div>
+      <hr class="hr-temas">
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <h4 id="changing" class="sub-title">CHANGING</h4>
+          <hr class="tema">
+          <p>
+              If what you want could be to add an element in a certain location of you could use change the element for another one, 
+              keep in mind that change will work as a substitution of the current element for the one you want to push in the array. 
+              The only thing is, in the same way, you access to any element in an array and changing his value.<br><br>
+          </p>
+        </div>
         <div class="code-zone col-md-6 col-lg-6">
-          <img class="img-fluid" src="./src/assets/images/push.png" alt="">
+          <img class="img-fluid" src="./src/assets/images/change.png" alt="">
         </div>
       </div>
+      <hr class="hr-temas">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <h4 id="delete" class="sub-title">DELETE</h4>
+          <hr class="tema">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <img class="img-fluid" src="./src/assets/images/deletearray.png" alt="">
+        </div>
+        <div class="code-zone col-md-6 col-lg-6">
+          <p>
+              In the same way, as change an element in the array we can delete it using the method delete, in this case, this method
+              doesn't use brackets (), the word goes before we access to the element we want to remove. You must have in mind that this method
+              doesn't fully delete the element, but just clean the position selected leaving it empty.<br><br>
+          </p>
+        </div>
+      </div>
+      <hr class="hr-temas">
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <h4 id="splice" class="sub-title">SPLICE</h4>
+          <hr class="tema">
+          <p>
+              This method will help us to add new elements and/or delete elements from an array. The method splice() use many parameters,
+              the first two should be numbers, the first one represents the position where the splice will start to work and the second one
+              represent how many elements will be removed from the position specified in the last parameter, after that the rest of the parameters
+              will be all the elements you will add to the array.<br><br>
+          </p>
+        </div>
+        <div class="code-zone col-md-6 col-lg-6">
+          <img class="img-fluid" src="./src/assets/images/splicearray.png" alt="">
+        </div>
+      </div>
+      <hr class="hr-temas">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <h4 id="slice" class="sub-title">SLICE</h4>
+          <hr class="tema">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <img class="img-fluid" src="./src/assets/images/slicearray.png" alt="">
+        </div>
+        <div class="code-zone col-md-6 col-lg-6">
+          <p>
+              As his name implies this method slice an array starting from a certain position, but it doesn't separate the slice from the original array 
+              but creates a new array using a copy from the sliced elements. To work correctly with the array's slice you must save the result in a variable.<br><br>
+          </p>
+        </div>
+      </div>
+      <hr class="hr-temas">
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <h4 id="concat" class="sub-title">CONCAT</h4>
+          <hr class="tema">
+          <p>
+              When it comes to concat an array it means to join two arrays into one, but it doesn't mean to delete the previous arrays. As the same of slice, we must
+              save the result of the method into a variable if we want to use it later. Have in mind that the array that will be merged into the another their elements
+              will start after the elements of the array that is merged.<br><br>
+          </p>
+        </div>
+        <div class="code-zone col-md-6 col-lg-6">
+          <img class="img-fluid" src="./src/assets/images/concatarray.png" alt="">
+        </div>
+      </div>
+      <hr class="hr-temas">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <h4 id="sort" class="sub-title">SORT</h4>
+          <hr class="tema">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <img class="img-fluid" src="./src/assets/images/sortarray.png" alt="">
+        </div>
+        <div class="code-zone col-md-6 col-lg-6">
+          <p>
+              Sort as his name implies it sorts the elements of an array changin their positions, but it only sort alphabetically, no matter if you have strings or numbers.<br><br>
+          </p>
+        </div>
+      </div>
+
     </div>
   </body>
+
+
   <script type="text/javascript">
 
     var array = ["Jhon", "Male", "22", "Sawyer"];
@@ -129,8 +232,64 @@
     //shiftElement: "John"
     
     array.push("Developer");
-    console.log("pop array:",array);
+    console.log("push array:",array);
     //Output
-    ////first array: (3) ["Male", "22", "Developer"]
+    //push array: (3) ["Male", "22", "Developer"]
+    
+    //The second element in the array (22) will be changed by 30
+    array[1] = "30";
+
+    console.log("changed array:", array);
+    //Output
+    //changed array: (3) ["Male", "30", "Developer"]
+    
+    //The first element in the array will be deleted
+    delete array[0];
+
+    console.log("delete array:", array);
+    //Output
+    //delete array: (3) [empty, "30", "Developer"]
+
+    var array = [, "30", "Sawyer"];
+
+    //In this splice we are starting from the first position without deleting anything
+    array.splice(0,0,"Mike", "Developer")
+
+    console.log("splice array", array);
+    //Output
+    //splice array: (5) ["Mike", "Developer", empty, "30", "Developer"]
+    
+    //Here with splice we will removed 1 element starting with the third position
+    array.splice(2,1,);
+
+    console.log("splice array2:", array);
+    //Output
+    //splice array2: (4) ["Mike", "Developer", "30", "Developer"]
+    
+    //This will create a new array from the array data starting with the elements in
+    // third position
+    slicedArray = array.slice(2)
+
+    console.log("array's slice:", slicedArray);
+    //Ouput
+    //array's slice: (2) ["30", "Sawyer"]
+
+    var array_2 = ["Mary", "QA", "27", "Sawyer"];
+
+    //We merge here 2 diferents arrays into one
+    var concatArray = array.concat(array_2);
+
+    console.log("merged array", concatArray);
+    //Output
+    //merged array: (8) ["Mary", "QA", "27", "Sawyer", "Mike", "Developer", "30", "Developer"]
+
+    var concatArray = ["Mary", "QA", "27", "Sawyer", "Mike", "Developer", "30", "Developer"]
+
+    concatArray.sort();
+
+    console.log("sorted array:", concatArray);
+    //Output
+    // sorted array: (8) ["27", "30", "Developer", "Developer", "Mary", "Mike", "QA", "Sawyer"]
+
   </script>
 </html>
