@@ -14,7 +14,53 @@
     </nav>
     <div class="content container">
       <h1>Objects</h1>
-      <h4 class="sub-title">sutitle</h4>
+      <h4 class="sub-title">JavaScript Objects</h4>
       <hr class="tema">
+      <p>
+        Objects, in JavaScript, is it’s most important data-type and forms the building 
+        blocks for modern JavaScript. These objects are quite different from JavaScript’s 
+        primitive data-types(Number, String, Boolean, null, undefined and symbol) in the 
+        sense that while these primitive data-types all store a single value each (depending
+         on their types).
+      </p>
+      <ul>
+        <li>Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.</li>
+        <li>An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value. That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.</li>
+        <li>Loosely speaking, objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.</li>
+      </ul>
+      <p>In real life, a car is an <code class="code-two">object</code>.</p>
+      <p>A car has <code class="code-two">properties</code> like weight and color, and <code class="code-two">methods</code> like start and stop:</p>
+      <div class="row">
+        <div class="col-md-4">
+          <p><b>Object</b></p>
+          <img class="img-fluid" src="./src/assets/images/variablesytipos.png" alt="Object">
+        </div>
+        <div class="col-md-4">
+          <p><b>Properties</b></p>
+          <ul>
+            <li>car.model = Volkswagen 1200</li>
+            <li>car.color = orange</li>
+            <li>car.name = Beatle</li>
+            <li>car.weight = 740kg</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <p><b>Methods</b></p>
+          <ul>
+            <li>car.start()</li>
+            <li>car.drive()</li>
+            <li>car.brake()</li>
+            <li>car.stop()</li>
+          </ul>
+        </div>
+      </div>
+      <p>All cars have the same <code class="code-two">properties</code>, but the property <code class="code-two">values</code> differ from car to car.</p>
+      <p>All cars have the same <code class="code-two">methods</code>, but the methods are performed <code class="code-two">at different times</code>.</p>
+      <p>Objects are variables too. But objects can contain many values.</p>
+      <p>This code assigns many values (Beatle, 1200, orange) to a variable named car:</p>
+      <div class="code">
+        <code class="code-if">var</code> <code class="code-var">car</code> = { <code class="code-var">type</code>: <code class="code-or">"Fiat"</code>, <code class="code-var">model</code>: <code class="code-or">"500"</code>, <code class="code-var">color</code>: <code class="code-or">"white"</code> };
+      </div>
+    </div>
   </body>
 </html>
