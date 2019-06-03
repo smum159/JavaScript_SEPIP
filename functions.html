@@ -14,7 +14,61 @@
     </nav>
     <div class="content container">
       <h1>Functions</h1>
-      <h4 class="sub-title">sutitle</h4>
+      <h4 class="sub-title">What is a Function?</h4>
       <hr class="tema">
+      <p>
+        Functions are one of the fundamental building blocks in JavaScript. 
+        A function is a JavaScript procedure—a set of statements that performs 
+        a task or calculates a value. To use a function, you must define it somewhere 
+        in the scope from which you wish to call it
+      </p>
+      <p>
+        A <b>function definition </b>consists of the <code class="code-two">function</code> keyword, followed by:
+      </p>
+      <ul>
+        <li>The name of the function, Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</li>
+        <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+        <li>The JavaScript statements that define the function, enclosed in curly brackets, <code class="code-two">{ }</code>.</li>
+      </ul>
+      <p>For example, the following code defines a simple function named <b>multiply</b>:</p>
+      <div class="code">
+        <code class="code-if">function</code> <code class="code-am">square</code>(<code class="code-var">number</code>) {<br>
+        &nbsp;&nbsp;&nbsp;<code class="code-ret">return</code> <code class="code-var">number</code> * <code class="code-var">number</code>;<br>
+        }
+      </div>
+      <ul>
+        <li>Function <b>parameters</b> are listed inside the parentheses () in the function definition.</li>
+        <li>Function <b>arguments</b> are the <b>values</b> received by the function when it is invoked.</li>
+        <li>Inside the function, the arguments (the parameters) behave as local variables.</li>
+      </ul>
+      <p>The function <b><code class="code-two">multiply</code></b> takes one parameter, called number. The function consists of one statement that says to return the parameter of the function (that is, number) multiplied by itself. The statement return specifies the value returned by the function:</p>
+      <div class="code">
+        <code class="code-ret">return</code> <code class="code-var">number</code> * <code class="code-var">number</code>;<br>
+      </div>
+      <hr class="hr-temas">
+      <h4 class="sub-title">Why Functions?</h4>
+      <ul>
+        <li>You can reuse code: Define the code once, and use it many times.</li>
+        <li>You can use the same code many times with different arguments, to produce different results.</li>
+      </ul>
+      <p>Convert Fahrenheit to Celsius, example:</p>
+      <div class="code">
+        <code class="code-if">function</code> <code class="code-am">toCelsius</code>(<code class="code-var">fahrenheit</code>) {<br>
+        &nbsp;&nbsp;&nbsp;<code class="code-ret">return</code> (<code>5</code>/<code>9</code>) * (<code class="code-var">fahrenheit</code>-<code>32</code>);<br>
+        }
+      </div>
+      <p>Try:</p>
+      <div class="try">
+        fahrenheit <input id="fahrenheit" type="number"> <button onclick="toCelsius()">Convert</button> to Celsius, Result <code id="res-celsius" class="code-two">0</code>
+      </div>
+    </div>
+    <script>
+      function toCelsius() {
+        var fahrenheit = document.getElementById('fahrenheit').value;
+        var result = (5/9) * (fahrenheit-32);
+        var res = document.getElementById('res-celsius');
+        res.innerHTML = result;
+      }
+    </script>
   </body>
 </html>
